@@ -7,14 +7,17 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 User.destroy_all
-Objective.destroy_all
+Stuff.destroy_all
  puts "cleared"
 
  u1=User.create(name:"big daddy chad")
  puts 'user'
 
- Objective.create(item:'hook up with the new hotty', user_id: u1.id)
- 
- Objective.create(item:'bust inside the highschool bra', user_id: u1.id)
+ Stuff.create(goal:'hook up with the new hotty', user_id: u1.id)
 
- puts 'objectives'
+ puts 'Stuffs'
+
+ Stuff.create(goal:'bust inside the highschool bra', user_id: u1.id)
+
+
+ puts 'finish'
