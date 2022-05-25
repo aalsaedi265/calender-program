@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-export default function List(){
+export default function List({goals}){
 
     return (
 
